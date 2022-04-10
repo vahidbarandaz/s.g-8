@@ -1,0 +1,465 @@
+@import "variables";
+
+// css resets//
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// css reset//
+
+// general//
+
+    
+
+html{
+    font-family: sans-serif;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+h2.id3-h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+p{
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+}
+
+// mixin//
+
+@mixin floatright {
+    float: right;
+}
+
+@mixin floatleft {
+    float: left;
+}
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin mfloatR {
+   float: right;
+   width: 50%; 
+}
+@mixin mfloatL {
+    float: left;
+    width: 50%;
+}
+@mixin percentfill {
+    background-color: $redColor;
+    height: 8px;
+    border-radius: 1em;
+}
+
+
+// header //
+
+
+header{
+    nav{
+        background-color: #ddd;
+        padding: 1.2em;
+        
+        ul{
+            text-align: right;
+            display: inline-block;
+            margin-left: 35em;
+            li{
+                display: inline-block;
+                 padding: 1.5em;
+                 
+                 a{
+                     color: black;
+                 }
+
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: $redColor;
+    border-radius: 2em;
+    padding: 1em 2em;
+    margin-left: 2em;
+
+}
+.navfloatright{
+    @include floatright;
+    
+}
+.navfloatleft{
+    @include floatleft;
+    margin: -1.6em 2.5em;
+    font-size: 1.7em;
+}
+
+// section1//
+
+#section1{
+   div{
+        p {
+            line-height: 1.5em;
+        }
+        h1 {
+            font-size: 4em;
+        }
+    }
+}
+.flex {
+    display: flex;
+}
+  
+.flex1{
+    background-image: url(../Assets/images/baner-dec-left.png);
+    background-repeat: no-repeat;
+    padding: 15em 1em
+
+}  
+
+.margin-padding {
+    margin-left: 8em;
+    width: 50%;
+}
+
+a.a-flex {
+    color: $blueColor;
+}
+p.blue-box {
+    background-color: $blueColor;
+    padding: 1.5em;
+    border-radius: 3em;
+    color: #ddd;
+    display: inline-block;
+}
+a.a-box {
+    background-color: white;
+    padding: 1em;
+    border-radius: 2em;
+    color: $redColor;
+    margin: auto -1em auto 2em;
+}
+.felx2{
+    background-image: url(../Assets/images/baner-dec-right.png);
+    text-align: right;
+    background-repeat: no-repeat;
+    padding: 0em 2em;
+    width: 50%;
+    background-position-x: right;
+}
+
+img {
+    margin: 0em 0em;
+    padding: 16em 2em;
+
+}
+
+// section2//
+
+#section2{
+    background-image: url(../Assets/images/about-bg.png);
+    background-repeat: no-repeat;
+    margin-top: 1em;
+}
+
+img.img-f {
+    @include floatleft;
+    padding: 0em 1em;
+}
+.float-right {
+    @include floatright;
+    padding: 2em 1em;
+}
+.flex-id2 {
+    @include flex;
+    padding: 10em 0em;
+}
+.float-right {
+    @include floatright;
+    padding: 1em 1em;
+    width: 67%;
+}
+.float-left {
+    @include floatleft;
+    width: 30%;
+}
+img {
+    margin: 0em 0em;
+    padding: 10em 3em;
+}
+h3.H3 {
+    color: white;
+    font-size: 1.2em;
+}
+p.p-id2 {
+    color: white;
+}
+
+// section3//
+section#modifi {
+    margin-top: 5em;
+}
+.floatmright {
+   @include mfloatR;
+}
+.floadmleft {
+    @include mfloatL;
+}
+img.img-modifi {
+    padding: 1em 1em 1em 5em;
+}
+.percent {
+    background-color: #ddd;
+    width: 94%;
+    max-width: 94%;
+    margin-top: 4em;
+    border-radius: 1em;
+}
+.f1{
+    @include percentfill;
+    width: 70%;
+}
+.f2{
+    @include percentfill;
+    width: 84%;
+}
+.f3{
+    @include percentfill;
+    width: 92%;
+}
+span.perc {
+    font-size: 1.3em;
+    position: relative;
+    top: 2.5em;
+}
+span.perc2 {
+    font-size: 1.3em;
+    position: relative;
+    top: 2.5em;
+    color: $blueColor;
+}
+span.perc2.pr1 {
+    left: 15.2em;
+}
+span.perc2.pr2 {
+    left: 21.5em;
+}
+span.perc2.pr3 {
+    left: 21.6em;
+}
+
+
+// section4//
+
+section#section3 {
+    text-align: center;
+    margin-top: 9em;
+}
+
+.flex-end {
+    @include flex;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+.picture {
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px #ddd, -5px -5px 5px #ddd;
+    margin: auto 0em;
+}
+img.img-id3 {
+    padding: 6em 7em;
+}
+
+
+//section5//
+
+
+.floatm2left {
+    @include mfloatL;
+}
+section#Smodifi4 {
+    padding: 4em 3em;
+    margin-top: 4em;
+}
+img.img-modifi2 {
+    padding: 0em 0em;
+    border-radius: 1.2em;
+    margin-top: 5em;
+}
+.mh3 {
+    color: black;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.boxm4 {
+    width: 70%;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 5px 5px 50px #ddd, -5px -5px 50px #ddd;
+    padding: 2em;
+    position: relative;
+    top: -2em;
+}
+#i{
+    color: $redColor;
+}
+.Mspan4{
+    color: rgb(155, 155, 155);
+    font-size: 1em;
+    padding: 0em 1em;
+}
+a.blue-buton {
+    color: white;
+    background-color: #00bfff;
+    padding: 1em 2em;
+    border-radius: 4em;
+    margin-top: 3em;
+}
+
+.floatm2right{
+    @include mfloatR;
+}
+.litelefloatl{
+    float: left;
+    width: 60%;
+}
+.litelefloatright{
+    float: right;
+}
+img.mright2 {
+    padding: 0em;
+    margin-left: 28em;
+}
+img.liteleright {
+    padding: 0.5em;
+    border-radius: 1em;
+}
+.padd{
+    padding: 0em 0em 0em 1em;
+}
+
+// section6//
+
+
+#Smodifi5{
+    background-image: url(../Assets/images/contact-bg.png);
+    background-repeat: no-repeat;
+    padding: 8em 8em;
+}
+h2.id5-h2 {
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+.floatM5-l {
+    @include mfloatL;
+    color: white;
+    margin: auto;
+}
+p.id5-p2 {
+    font-size: 1.5em;
+}
+.floatM5-R {
+    float: right;
+    width: 39%;
+    background-color: white;
+    padding: 2em 5em;
+    border-radius: 1em;
+    margin-right: -2em;
+    max-width: 100%;
+}
+
+input[type="text"] {
+    padding: 1em;
+    border-radius: 2em;
+    background-color: #a4f1ff;
+    border: aliceblue;
+    width: 44%;
+    color: #636161;
+}
+input[type="email"] {
+    padding: 1em;
+    margin: 1em 0em;
+    background-color: #a4f1ff;
+    border: aliceblue;
+    border-radius: 2em;
+    color: #636161;
+    width: 94.5%;
+}
+textarea#form\ message {
+    padding: 1em;
+    border-radius: 2em;
+    background-color: #a4f1ff;
+    border: aliceblue;
+    width: 94.5%;
+}
+button.btn-form {
+    background-color: #4ea0ed;
+    padding: 1em;
+    border-radius: 2em;
+    border: aliceblue;
+    margin-top: 0.5em;
+    color: white;
+}
+
+
+
+
+
+
+/* footer */
+footer.footer {
+    text-align: center;
+    line-height: 2em;
+    margin: 4em auto;
+}
