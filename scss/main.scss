@@ -452,14 +452,106 @@ button.btn-form {
     color: white;
 }
 
-
-
-
-
-
 /* footer */
 footer.footer {
     text-align: center;
     line-height: 2em;
     margin: 4em auto;
+}
+@media only screen and (max-width: 1200px) {
+    header nav ul {
+        margin-left: 19em;
+    }
+    header nav ul li {
+        padding: 1em;
+    }
+    a.a-box {
+        margin: auto 1em auto 6em;
+    }
+    p.blue-box {
+        padding: 1.5em 0em;
+        margin: 1em -4em;
+    }
+    img {
+        padding: 9em 0em;
+    }
+    .float-left {
+        width: 20%;
+    }
+    img.img-left {
+        padding: 12em 0em;
+    }
+    .float-right {
+        padding: 0.5em 0em;
+        width: 74%;
+    }
+    img.img-f {
+        padding: 0em 0em;
+    }
+    .float-right {
+        padding: 0.5em 0em;
+        width: 74%;
+    }
+    .floadmleft {
+        width: 42%;
+    }
+    img.img-modifi {
+        padding: 3em 1em 1em 3em;
+        width: 80%;
+    }
+    .floatmright {
+        float: right;
+        width: 58%;
+    }
+    span.perc {
+        top: 1.2em;
+    }
+    span.perc2.pr1 {
+        left: 13.2em;
+    }
+    span.perc2 {
+        top: 1.2em;
+    }
+    span.perc2.pr2 {
+        left: 19.5em;
+    }
+  
+    span.perc2.pr3 {
+        left: 18.9em;
+    }
+    .percent {
+      margin-top: 2em;
+    }
+    img.img-id3 {
+        padding: 3em 4em;
+    }
+    .floatm2left {
+        width: 47%;
+    }
+    img.img-modifi2 {
+        padding: 0em 0em;
+        margin-top: 5em;
+        width: 95%;
+    }
+    .boxm4 {
+        width: 76%;
+    }
+    .Mspan4 {
+        padding: 0em 0.2em;
+    }
+    img.mright2 {
+        margin-left: 19em;
+    }
+    .litelefloatl {
+        width: 50%;
+    }
+    .floatM5-l {
+        width: 46%;
+    }
+    .floatM5-R {
+        width: 40%;
+    }
+    input[type="text"] {
+        width: 42%;
+    }    
 }
